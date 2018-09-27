@@ -26,7 +26,7 @@
 <link href="/assets/profile.jpeg" rel="apple-touch-icon-precomposed" />
 <!-- Android Lolipop Theme Color -->
 <!-- <meta name="theme-color" content="#1464FB"> -->
-<title>图库</title>
+<title>gallery</title>
 <!-- 百度统计 -->
 
 <script>
@@ -93,6 +93,7 @@ var _hmt = _hmt || [];
     </ul>
 </div>
 
+
 <main>
   <div class="wow fadeIn top" data-wow-duration="3.5s" >
     <span class="wow fadeInUp" data-wow-delay="0.2s">gallery</span>
@@ -102,15 +103,34 @@ var _hmt = _hmt || [];
 
   <ul class="ex-list">
       <li  class="fadeInUp animated">
-        <style>
-    .image-gallery-index {overflow: auto; margin-left: -1%!important;}
-    .image-gallery-index a {float: left; display: block; margin: 0 0 1% 1%; width: 19%; text-decoration: none !important;}
-    .image-gallery-index a img {width: 100%; display: block;}
-    .image-gallery-index a span {display: block; text-align: center; padding: 3px 0;}
-</style>
-
-<p class="image-gallery-index"><a href="/gallery/best" title="Link to homepage"><img src="//images.weserv.nl/?url=localhost:4000/gallery/best/cyberpunk.png&w=300&h=300&output=jpg&q=50&t=square" /><span>Link to homepage</span></a></p>
-
+        <style TYPE="text/css">
+          .gallery-wrapper {
+            width: 35em;
+            text-align: center;
+            padding: 1em 0 4em 0;
+          }
+          .gallery-best-image{
+            max-height: 20em;
+            max-width: 20em;
+          }
+          </style>
+          
+          <div class="gallery-wrapper">
+              <a href="best">
+                  <img class="gallery-best-image" src="best/thumbs/brady-bellini-_hpk_92Crhs.jpg">
+              </a>
+              <h3><a href="best">Best</a></h3>
+              3 images
+          </div>
+          
+          <div class="gallery-wrapper">
+              <a href="test">
+                  <img class="gallery-best-image" src="test/thumbs/ray-hennessy-YCh5-MpB6C8.jpg">
+              </a>
+              <h3><a href="test">Test</a></h3>
+              2 images
+          </div>
+          
       </li>
   </ul>
 </main>
