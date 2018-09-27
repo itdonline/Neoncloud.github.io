@@ -1,0 +1,19 @@
+---
+layout: default
+title: 图库
+page-title:  gallery
+home-title: These are the highlights of my life.
+description:
+---
+
+{% include header.html %}
+{% include boot.html %}
+<main>
+  {% include title.html %}
+  <ul class="ex-list">
+      <li  class="fadeInUp animated">
+        {% include image-gallery.html folder="/gallery" %}
+      </li>
+  </ul>
+</main>
+{% include footer.html %}
