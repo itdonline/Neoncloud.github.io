@@ -4,6 +4,10 @@ title: 图库
 page-title:  gallery
 home-title: These are the highlights of my life.
 description:
+galleries:
+  - title: Link to homepage
+    image: /gallery/best/cyberpunk.png
+    url: /gallery/best
 ---
 
 {% include header.html %}
@@ -12,7 +16,7 @@ description:
   {% include title.html %}
   <ul class="ex-list">
       <li  class="fadeInUp animated">
-        {% include image-gallery.html folder="/gallery" %}
+        {% if page.galleries %}{% include image-gallery-index.html %}{% endif %}
       </li>
   </ul>
 </main>
